@@ -21,10 +21,10 @@ namespace UnitTestProject2
         [TestMethod]
         public void TestMethod1()
         {
-            RestClient client = new RestClient("https://api.interzoid.com/");
+            RestClient client = new RestClient("https://api.weatherbit.io/v2.0/current/");
 
 
-            RestRequest request = new RestRequest("getweather?license=904d305e79bb5988484eb6d6745bd0ef&city=&state=", Method.GET);
+            RestRequest request = new RestRequest("?city=&key=c61c893a97c04d87be540d1f69aeb5db", Method.GET);
 
             IRestResponse response = client.Execute(request);
 
